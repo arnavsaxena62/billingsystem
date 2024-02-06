@@ -18,8 +18,9 @@ public class Main {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     String givenname = (newItemText.getText());
+                    int givenprice = (Integer) newItemPrice.getValue();
 
-
+                    itemArrayList.add(new item(givenname, givenprice));
                 }
             });
         }
